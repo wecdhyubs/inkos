@@ -1,18 +1,21 @@
 ---
 name: inkos-story-review
-description: 按题材、目标读者和用户标准审稿，展示具体问题并协作修订。Use for chapter or manuscript review with transparent criteria.
+description: 按作品自身契约与文体标准审稿：人物、生活质地、语言、主题、结构、大纲说人话。展示具体问题与证据并协作修订，不按平台数据、读者画像或商业节拍打分。Use for chapter or manuscript review with transparent criteria.
 ---
-# Story review
 
-Use this skill when the user wants diagnosis, comparison, review, or revision advice for existing prose.
+# 审稿
 
-- First identify the applicable standard from genre, target audience, tone, platform, and explicit user preference. Everyday comedy, literary fiction, romance, mystery, and commercial serials should not share one logic-density threshold.
-- In an active book, use the auditor for persisted chapters. Show concrete issue descriptions, severity, evidence, and likely reader impact.
-- A parser or model-format failure produces a review-unavailable observation. It is not evidence that the prose is bad and never authorizes a rewrite.
-- Revise when the user asks or an explicit production action requests revision; report whether the revised artifact was actually applied.
-- Preserve the user's voice and successful passages. Prefer the smallest scope that resolves the real defect.
-- For long-form work, compare the chapter with populated memo requirements, recent progression, real hook ids, character knowledge, and reader promises. Repetition is not progression; a payoff, subplot, or emotional line moves only when facts, action, relationship, status, or understanding changes.
-- Route repairs by cause: local prose defects may be patched, while missing scenes, broken causality, timeline, viewpoint, character logic, or payoff require structural revision.
-- Respond in the user's language.
+用户要对已存在的章节或整稿做诊断、比较、审稿或修订建议时使用。
 
-Load `references/review-matrix.md` for a full review or when standards are disputed. The matrix is qualitative guidance, not a scorecard. For spinoffs, use parent canon as authority; for fanfic, honor `fanficMode` and explicit allowed deviations.
+- **先定标准**：从作品契约（写什么人、什么世界、想弄清楚什么、写到哪里算完）、文体与用户明确偏好中确定适用标准。不按榜单、平台、目标读者画像或追读效率评价；喜剧、纯文学、成长小说、类型长篇不共用一个逻辑密度阈值。标准不清时先问，不用默认标准硬套。
+- **文学质感检查**：人物是否只有功能、配角有没有独立的生活与动机；细节是否可观察并承担信息；不同人物的声口能否分辨；主题是靠选择与后果显现还是靠叙述者宣讲；成长是否付出代价；巧合是否承担后果；工作、钱、住处、规矩这些生活质地是否缺席；情绪有没有被标签替代。
+- **大纲腔是缺陷**：提纲若写成字段表、抽象套话、比例复述、自评，或把待写的事写成已发生，直接要求改成具体事件句（谁在哪、做了什么、结果变成什么）；台账与字数应退到附注。完整规范见本 Skill 的 references 目录下的 outline-voice.md，按需检索。
+- 在活动中的作品里，用 auditor 读取已落盘的章节；输出具体问题描述、严重度、原文证据位置、对契约哪一条的影响与修复方向。
+- 解析器或模型格式失败，只产生「审稿不可用」的观察；它不证明文稿差，也从不授权重写。
+- 只在用户要求、或明确的生产动作请求修订时改稿；报告修订产物是否真的被应用。
+- 保留用户的声音与写得好的段落，优先使用能解决真实缺陷的最小范围。区分客观矛盾与口味偏好，不打分、不否决一章、不自动触发改写。把每条发现标为「问题 / 已修复的旧问题 / 中性观察」并给证据。
+- 按成因路由修复：`local` 措辞与窄段落；`structural` 场景、因果、时间线、视角、人物逻辑、结构缺失；`factual` 已确立事实、名称、数字、物件归属与口径冲突；`outline` 提纲层的字段腔；`unknown` 证据不足以下判断。不要把格式层问题升级成结构或文笔的否定。
+- 大范围替换前，从没被改动的章节提取约束性事实，避免引入与后文冲突的新设定。审稿是定性的、有证据的观察，不是评分表。
+- 回复使用用户的语言。
+
+整篇审稿或标准有争议时加载 `references/review-matrix.md`。矩阵是定性指引，不是评分卡。

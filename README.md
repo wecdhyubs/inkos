@@ -26,6 +26,8 @@
 
 InkOS 是一个面向故事创作与多语言翻译的 AI Agent 系统：长篇连载、独立短篇、剧本剧作、同人番外、仿写续写、互动影游、开放世界和长文翻译，都可以从同一个工作台开始。支持 Studio、TUI、CLI 交互形式，把创意、设定、角色、记忆、审稿、修订、封面、互动状态和跨语言交付交给智能体统一管理。
 
+> **本工作区的写作方法已魔改为非商业导向**：四个写作链路 Skill 以人物、生活质地、叙述声音、主题与成长弧线为准，不以爽点、追读、卖点与封面为目标；详见下文的「写作方法：非商业导向」一节。封面、销售包、市场研究等宿主功能仍然保留，只是不再被写作方法当作默认追求。
+
 <p align="left">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://kimi-file.moonshot.cn/prod-chat-kimi/kfs/4/1/2026-06-05/1d8h69mt3v89kkekg24gg">
@@ -65,7 +67,7 @@ InkOS 2.0 把“Chat Agent 调工具”和“各类作品管线”收敛成一�
 
 - **模型配置**：Studio 内置多服务配置、模型路由和封面服务配置；支持 [kkaiapi](https://kkaiapi.com/) / OpenRouter 等全球主流模型聚合入口，以及自定义 OpenAI Chat Completions、OpenAI Responses 和 Anthropic Messages 服务。
 - **单一生产 Harness**：Studio Chat、TUI、`inkos interact` 与生产 worker 共用 pi-agent 工具循环和结构化 action/result；既有 pipeline 降为可直接调用、可中断、可观测的确定性能力，不再维护平行的自然语言决策内核。
-- **19 个内置专业 Skills**：长篇写作 / 审稿、商业短篇、Play、剧本、分镜、互动影游、翻译、拆稿、市场研究、导入、封面与去 AI 味都拥有独立 `SKILL.md`；各作品类型复用 Skill 架构，不复用不适合自己的长篇提示词。
+- **20 个内置专业 Skills**：长篇写作 / 审稿、单篇成稿、Play、剧本、分镜、互动影游、翻译、拆稿、市场研究、导入、封面与去 AI 味都拥有独立 `SKILL.md`；各作品类型复用 Skill 架构，不复用不适合自己的长篇提示词。其中 `inkos-long-writing`、`inkos-short-writing`、`inkos-story-review`、`inkos-story-deslop` 四个写作链路 Skill 在本工作区已改为非商业导向，见下文专节。
 - **统一本地检索**：故事记忆、材料库和 Skill 参考资料共用 SQLite FTS5 / BM25 检索投影；原始文件仍是权威来源，索引可重建，检索结果保留来源与位置。
 - **书籍参考资料绑定**：导入材料可以显式绑定到某本书并声明用途，写作时按当前任务检索相关段落，而不是把所有文件全文塞进上下文。
 - **安全章节工作区**：正文、状态、伏笔和运行快照先在章节工作区内校验，再原子提交；失败不会出现“状态已推进、正文未落盘”。Studio 可查看改写工作区和真实审稿问题。
@@ -85,7 +87,7 @@ InkOS 2.0 把“Chat Agent 调工具”和“各类作品管线”收敛成一�
 
 **剧情多线推演** — 在写下一章前，基于当前正史生成 2-5 条彼此隔离的未来分支，并在 Studio Chat 中横向比较章节节拍、人物决定、预计变化、风险和作者意图匹配度。采用分支只会保存 `selected-branch-plan.md` 候选计划，不会修改正文、大纲或正史状态；正史变化后旧推演会标记为过期。
 
-**InkOS Short** — Studio Chat 和 CLI 可以直接产出独立短篇：完整正文、大纲记录、审稿记录、简介卖点、封面提示词，并在配置封面服务后生成封面图。
+**InkOS Short** — Studio Chat 和 CLI 可以直接产出独立短篇：完整正文、大纲记录、审稿记录、简介卖点、封面提示词，并在配置封面服务后生成封面图。**说明**：本工作区的 `inkos-short-writing` 已改为非商业导向，只负责把小说写完整；简介卖点、封面提示词与封面图是宿主管线产物，不是写作方法的目标，需要纯文本创作时忽略即可。
 
 **InkOS Play** — 新增开放世界与分支互动。你可以用自然语言指定世界契约、时间推进方式、角色 agent、物品 / 证据 / 关系规则和视觉风格；系统维护世界状态、可点击选择、自由动作、HUD 和自动配图。
 
@@ -155,6 +157,28 @@ description: Detective evidence and suspect-board play.
 ---
 Use evidence chains; do not turn clues into generic atmosphere.
 ```
+
+### 写作方法：非商业导向（本工作区）
+
+本工作区把四个写作链路 Skill 直接改写为「写有文学质感的网文 / 长篇，但不追求商业性」。这是对内置 Skill 的定向魔改：**不新增、不删除 Skill ID，也不改 Agent 代码、CLI、Work Profile 与产物 schema**。
+
+| Skill | 改了什么 |
+| --- | --- |
+| `inkos-long-writing` | 去掉读者契约、追读压力、爽点节拍、钩子兑现与商业连载公式；改为人物先于情节、群像各有营生、成长是代价而非升级、生活质地决定选择、叙述声音与双时间层、主题从后果显现、章末完整一拍 |
+| `inkos-short-writing` | 去掉卖点、封面、竖版构图与商业章节数默认；只负责把单篇小说写完整，结尾留代价与余味 |
+| `inkos-story-review` | 不再按平台、读者画像或追读效率评价；增加人物是否只有功能、生活质地、声口、主题是否被宣讲、巧合是否还债等维度 |
+| `inkos-story-deslop` | 恢复具体的人与可观察的世界：人物行为、物件、社会细节、有区别的声音，而不是制造口语感 |
+
+四个 Skill 共用 `references/outline-voice.md`：**大纲必须说人话**。提纲用一到三句具体事件写「谁在哪、做了什么、撞上什么、结果变成什么」，不写「本章功能 / 推进主线 / 深化关系 / 埋下伏笔」这类字段与自评；台账 ID 与字数退到附注。
+
+`inkos-long-writing/references/literary/` 整合了工作区 `skills/` 下四个文学 Skill 的静态资料（类型总谱、魔幻现实主义、课本小说赏析、都市青春文风），并新增：
+
+- `INDEX.md`：按问题查资料的路由表与使用原则；
+- `dickens-bildungsroman.md`：《大卫·科波菲尔》一类成长小说的十条可迁移技法、可对照的作品坐标，以及和商业套路的逐项差异表。
+
+用 Chat 时可直接说明目标质感，例如「按《大卫·科波菲尔》那类成长小说的写法写长篇，第一人称回顾，不要爽点」，或用 `@inkos-long-writing` / `@inkos-story-review` 强制加载。想回到原版方法，把 `packages/core/skills/` 与 `packages/core/src/__tests__/external-skill-loader.test.ts` 恢复到 Git 版本，并删除新增的 `references/outline-voice.md` 与 `references/literary/` 即可。
+
+> 宿主功能（封面、`sales-package.md`、市场研究 Skill、`inkos radar` 等）仍然存在，文档中的功能说明保持如实；它们只是不再被写作方法当作默认目标。`inkos detect` 的统计检测与 `inkos-story-deslop` 的语义去味是两件事。
 
 ### 配置
 
@@ -310,19 +334,19 @@ inkos export 吞天魔帝 --format epub  # 导出 EPUB（手机/Kindle 阅读）
 想直接生成一篇完整短篇，可以在 Studio 对话里说：
 
 ```text
-写一篇 12 章短篇，方向是：都市婚姻反转，女主拿到账本证据后反杀。
+写一个 12 章短篇，方向是：少年搬家前最后一次去旧书店，见到当年教他认字的店员；第一人称回顾，不要反转和爽点。
 ```
 
 也可以走 CLI：
 
 ```bash
 inkos short run \
-  --direction "都市短篇 婚姻反转 女主证据反杀" \
+  --direction "成长短篇 旧书店 第一人称回顾 重逢与告别" \
   --chapters 12 \
   --chars 1000
 ```
 
-生成物会落在 `shorts/<故事名>/final/`，包含 `full.md`、`sales-package.md`、`cover-prompt.md`，配置封面服务后还会生成 `cover.png`。
+正文按 `inkos-short-writing` 的非商业方法写：完整场景、人物各自的营生与说话方式、结尾留代价与余味。生成物落在 `shorts/<故事名>/final/`，包含 `full.md`、`sales-package.md`、`cover-prompt.md`，配置封面服务后还会生成 `cover.png`；后三项是宿主管线产物，不是写作方法的目标，需要纯文本时忽略即可。
 
 ### 单独制作封面
 
@@ -365,6 +389,8 @@ Play 维护一个可持续推进的世界状态：角色、地点、物品、证
 连续性审查会从角色记忆、物资连续性、伏笔回收、大纲偏离、叙事节奏和情感弧线等维度记录具体 observation。内置 AI 痕迹检测会标出高频词、句式单调和过度总结等可修订位置。observation 是可追溯的创作反馈，不会把章节改写成“通过/失败”状态；用户或 Agent 可据此显式发起修订。
 
 去 AI 味由可替换的 `inkos-story-deslop` Skill 提供语义方法；需要时显式调用 `revise --mode anti-detect`，不会由隐藏词表自动改稿。
+
+本工作区把 `inkos-story-review` 与 `inkos-story-deslop` 一并改为非商业导向：审稿按作品自身契约，增加人物是否只有功能、生活质地是否缺席、声口能否分辨、主题是否被宣讲等维度；去 AI 味恢复具体的人物行为、物件与有区别的声音，而不是制造口语感。详见上文的「写作方法：非商业导向」。
 
 ### 文风仿写
 

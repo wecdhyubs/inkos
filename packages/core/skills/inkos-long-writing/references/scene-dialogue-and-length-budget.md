@@ -1,13 +1,29 @@
-# Scene, dialogue, and length budget
+# 场景、对白与篇幅
 
-## Build length before prose
+## 动笔前按内容分配篇幅
 
-Treat the chapter target as a scene budget, not a request to pad or trim a finished chapter. Assign the available words or characters to two to five scenes according to dramatic work. A scene earns space through action, resistance, discovery, relationship change, or consequence. If the plan cannot spend the budget on real events, fix the plan before drafting.
+把字数目标当作**场景预算**，不是写完后再增删的指标。按各场景实际承担的生活、对抗、发现、关系变化或后果来分配。一个场景靠「有人在其中做了无法撤回的事」挣得篇幅；只负责交代信息的段落合并掉。
 
-## Dialogue carries pressure
+如果计划无法把预算花在真实的事上，先修计划再起草。安静场景同样占预算，但必须有耐久变化。
 
-In a confrontation, each meaningful reply changes leverage, reveals a constraint, creates a debt, or forces a choice. Remove exchanges that only restate known positions. Let subtext arise from what a character risks by speaking, withholding, or changing the subject.
+## 场景
 
-## Repair measured drift
+一个完整场景有：谁想干什么、什么拦着（人、规矩、钱、距离、羞耻）、他做了什么、留下了什么后果。不要用概述、分析或一段总结替代应当呈现的场景。
 
-When a draft misses its hard range, repair the scenes responsible for the drift. Expand a missing action, consequence, or reaction beat; compress recap, repeated interiority, and duplicated description. Preserve established facts and the chapter's intended turn. Never rewrite the whole chapter merely to hit a number.
+情绪靠动作、停顿、物件、说话方式的改变呈现，不靠情绪标签。叙述声音（人称、时态、距离、句子节奏）全篇一致；第一人称回顾里，经历的我与讲述的我知道的不一样，这个差值要有意识地用。
+
+## 对白
+
+- 每次有意义的发言都要改变点什么：改变筹码、暴露约束、形成亏欠、给出人物才知道的事，或逼对方做选择。删掉只复述已知立场的往返。
+- 每个人说话的方式不同：句子长短、用词、避而不谈的东西、打断别人的习惯。潜台词来自说话要冒的风险，不靠作者补一句解释。
+- 对白不负责向读者交代设定；让人物在争执、请求、撒谎、沉默里露出他生活的世界。
+
+## 修复长度漂移
+
+超出或不足硬性区间时，只修造成漂移的场景：
+
+- 需要加长：补上缺失的对抗、阻力、决定、证据获取、后果或生活质地，展开成完整场景；
+- 需要压缩：合并重复的反应、解释、过渡与描述；
+- 始终保留已确立事实、关键对白、人物决定与该场景本要完成的转折。
+
+绝不为凑一个数字整章重写，也不要把完整场景压成摘要了事。长度问题若出在计划层，回到单元计划修，不在句子层硬凑。

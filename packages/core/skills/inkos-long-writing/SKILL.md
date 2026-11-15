@@ -1,25 +1,53 @@
 ---
 name: inkos-long-writing
-description: 长篇小说的场景构造、人物因果、信息释放与连载节奏。Used by InkOS long-form workers as their shared craft method.
+description: 非商业导向的长篇小说写作方法：以人物、生活质地、叙述声音、主题与成长弧线为核心，兼收经典成长小说（如《大卫·科波菲尔》）的技法、类型学、文风调性与大纲说人话。不以爽点、追读、卖点、封面或字数为目标。Used by InkOS long-form workers as their shared craft method.
 ---
-# Long-form narrative craft
 
-Apply this method inside the active architect, writer, auditor, or reviser operation.
+# 长篇小说写作方法
 
-- Turn the chapter goal into scenes with an immediate objective, resistance, a meaningful turn, and consequences that survive the scene.
-- Let character choices follow what each person wants, knows, fears, and can afford. Relationships change through events, not author explanation.
-- Reveal setting and backstory through action, evidence, dialogue, and sensory particulars. Do not replace a scene with a synopsis or analysis.
-- Every passage must alter conflict, evidence, emotion, relationship, knowledge, position, or future consequence. Remove padding rather than stretching to a number.
-- Control information deliberately: answer some active reader questions, deepen others through concrete evidence, and do not manufacture twists by hiding facts the viewpoint should know.
-- Preserve the user's voice, viewpoint, prohibitions, proportions, and current direction. Genre convention is only a default when the governed context is silent.
-- End a chapter after a material change or fresh pressure, not with a mechanical cliffhanger formula. Show the after-effect of major payoffs before starting another escalation cycle.
-- Use references as evidence for craft or facts only. Do not reproduce source wording, names, scene order, or signature combinations.
-- During review or revision, diagnose and repair the smallest layer that actually causes the problem. A formatting failure is not evidence that the prose is bad.
-- When the author changes a premise, distinguish retained source facts from superseded generated plans. Apply the latest explicit change consistently to the foundation, chapter plan and prose; an old memo or hook cannot require restoring a deleted premise. Report remaining contradictions between those documents instead of treating the obsolete plan as a new instruction.
-- During prose polishing, change only wording, sentence shape, paragraphing, sensory precision, punctuation, and dialogue naturalness. Preserve events, viewpoint, character decisions, information, and consequences. Keep the result close in length and voice to the accepted chapter.
-- Prefer concrete verbs, observable reactions, distinct voices, and readable paragraph rhythm over narrator conclusions, repeated hedges, decorative description, or synchronized crowd reactions.
-- When reviewing a new foundation, test whether the central conflict can sustain the requested span, the opening creates forward pressure, the world is specific and coherent, major characters differ in motive and voice, and the outline can progress without repeating one beat. For fan fiction or series work, preserve source facts while establishing a real divergence or new narrative space.
-- When creating a foundation, connect a visible foreground line to a deeper causal line, give every volume an observable end-state and irreversible change, make character arcs pay a cost, and distinguish dormant seeds from already active promises.
+在当前 architect、writer、auditor、reviser 操作内应用本方法。
 
-Load `references/foundation-design.md` while creating or rebuilding a book foundation. Load `references/reader-contract-and-progression.md` while planning, writing, reviewing, or revising chapters.
-Load `references/state-projection.md` while observing a completed chapter or settling runtime truth files.
+**定位**：作品仍然是可供在线连载的长篇小说，但**不按商业套路写**。目标是《大卫·科波菲尔》那一类作品的质量——人物立得住、生活有厚度、语言有自己的声音、主题从后果里长出来、成长要付代价。追读压力、爽点节拍、卖点包装、竖版封面、字数注水不是本方法追求的东西；它们只在用户明确要求时才作为外加约束，绝不作为默认。
+
+## 作品契约（替代「读者承诺」）
+
+动笔前定四件事，写进基础文档：写的是什么人、他活在什么样的具体世界里、这部作品真正想弄清楚什么、写到哪里算写完。契约用于判断一段文字该不该留，不用来制造期待或计算兑现。用户指定的题材、人称、篇幅、语气与禁令高于一切文体惯例。
+
+## 人物先于情节
+
+- 每个重要人物都要有自己的欲望、恐惧、局限、来处、说话方式，以及一件与主线无关但他在意的事。配角不是递信息的道具，也不是主角升级的踏板。
+- 关系靠共同经历、亏欠、误解与选择改变，不靠作者一句「从此两人关系变好」。群像里每个人对同一件事有自己的解释。
+- 成长弧线是**变化与代价**，不是等级提升。允许停滞、退步、做错和不划算的选择；一个人物付了什么代价，比他得到了什么更能说明他是谁。
+- 不靠反派突然降智、天降能力、巧合救场解决困境。狄更斯式的巧合可以用，但必须有铺垫、有当事人要承担的后果，并且改变的是人物的处境而不是替作者收尾。
+
+## 生活质地与细节
+
+- 把工作、钱、住处、路程、天气、物件、规矩写具体。人物靠什么过日子，决定他能做什么、不敢做什么。
+- 用可观察的动作、物件、声音、气味与停顿呈现情绪，不写「他感到一阵悲凉」这类标签。细节要承担信息、关系或处境，装饰性描写删掉。
+- 叙述声音固定：人称、时态、叙述距离、句子节奏、用词层级全篇一致。第一人称回顾可以有两个时间层——经历的我与讲述的我，两者知道的不一样，这个差值本身就是内容。
+- 主题通过选择与后果显现，不由叙述者宣讲，也不在结尾用一段总结点题。
+
+## 场景、结构与推进
+
+- 把每个单元写成**一到三句具体事件**，再落实为场景：谁想干什么、什么拦着、做了什么、留下了什么后果。不要用概述或分析替代应当呈现的场景。
+- 每一段要改变点什么：人物的处境、所知、关系、判断或读者对人物的理解。没有变化的段落合并或删掉，而不是拉长到字数。
+- 可见主线连到深层因果线；每个卷 / 篇有可观察的终态与不可逆变化。安静章节合法，只要里面有耐久的变化。核心事件之后先写余波再进入下一轮。
+- 信息释放要诚实：不靠隐瞒视角人物已知的事拖节奏，不靠一句误会撑三章。回答一部分，用具体证据加深一部分。
+- 章末停在一个完整的一拍上——一句话、一个动作、一个判断都要收完。可以用新问题引出下一章，但不用机械悬念公式，也不为「追读」断在半句里。
+- 篇幅按内容需要分配：写短了补齐缺失的对抗、后果、反应或生活质地，写长了合并重复的解释与过渡。绝不为凑数字整章重写。
+
+## 大纲说人话
+
+提纲、卷 / 章计划、单元 memo 是给执笔的人看的施工说明：一条用具体事件写清谁在哪、想干什么、撞上什么、做了什么、结果变成什么、下一单元为什么非写不可。不写「本章功能 / 推进主线 / 深化关系 / 埋下伏笔 / 实现阶段性兑现」，不自评，不复述百分比，不把待写的事写成已查明。台账 ID、字数预算、口径退到附注，不许用字段表取代事件句；标题也要能当一句人话读。完整规范见本 Skill 的 references 目录下的 outline-voice.md，按需检索。
+
+## 连续性与修订
+
+- 事实、推断、计划分开；时间线（发生 / 获知）、物件归属、人物已知信息、名称与数字全书一致。大纲是计划不是已发生，提及未决事项不算推进。
+- 前提变更时区分仍有效的源事实与被取代的旧计划，把最新变更一致地应用到基础文档、提纲与正文，并报告残留矛盾；旧提纲不能要求恢复已删除的前提。
+- 审稿与修订只修真正致错的最小层：格式 / 解析失败不是文笔差，文笔问题不是结构错，结构错不等于事实错。润色只改措辞、句式、分段、标点与对话自然度，不改事件、结论、人物决定与后果。
+- 优先具体动词、有区别的声口、可读的段落节奏；少用叙述者结论、成叠限定词、整齐排比与总结腔。不复制参考作品的措辞、人名、场景顺序或标志性组合。
+- 回复使用用户的语言。
+
+创建或重建基础文档时加载 `references/foundation-design.md`。规划、写作、审稿或修订时加载 `references/reader-contract-and-progression.md`（文件名沿用，内容已改为「作品自身的推进」）。观察已完成章节或结算连续性台账时加载 `references/state-projection.md`。
+
+其余静态资料按需检索，不随 Skill 启动全量注入：outline-voice.md（大纲说人话）、scene-dialogue-and-length-budget.md（场景、对白与篇幅）、literary/INDEX.md（文学资料路由与《大卫·科波菲尔》式技法）。用 use_skill 的 query 或 resourcePath 取用，文件都在本 Skill 的 references 目录下。SKILL.md 中的反引号路径会被宿主无条件加载，因此只保留上面三份核心资料作为固定引用。

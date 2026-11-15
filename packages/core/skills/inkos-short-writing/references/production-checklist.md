@@ -1,43 +1,38 @@
-# Short-fiction production checklist
+# 单篇成稿检查表
 
-## Before writing
+整篇生产或整稿修订前逐项过一遍。这里没有销售包装、封面与卖点检查——本方法不追求商业性，除非用户单独明确要求。
 
-- Core conflict can sustain a complete short story.
-- Protagonist has an active desire and constrained tactic.
-- Pressure source has a credible interest, fear, or misunderstanding.
-- Opening creates a concrete emotional or practical deficit.
-- Evidence and setup exist before each major reversal.
-- When timestamps or quantities carry decisive evidence, establish one reference timeline and identify what each record measures. Apply any clock offset consistently, then check that every alleged cause still precedes its effect under the same conversion.
-- Ending delivers the promised emotional result and cost.
+## 动笔前
 
-## During whole-story review
+- 作品自己要弄清楚的那件事已定；人物有独立的欲望、局限与说话方式。
+- 一条主线，至多一条辅助对照线；每个场景都有转折，不存在只做解释的场景。
+- 开篇给的是具体的人、场景、物件或未答事实，不是推介式导语。
+- 每个重大反转或结论，前置证据、可及性与获取过程都已安排。
+- 涉及时间、数量、路程、金额时，先定一条参考时间线与统一口径，并确认原因仍先于结果。
+- 结尾能回应该篇自己提出的问题，并留下代价或余味；不靠强行圆满或强行反转。
+- 大纲说人话：每条用具体事件句写，台账与字数预算在附注里，没有字段表、功能标签、抽象套话、比例复述与自评；标题能当一句人话读。详见 `references/outline-voice.md`。
 
-- No scene exists only to explain.
-- Later chapters do not collapse into summary.
-- Chapter transitions preserve causality.
-- Names, facts, objects, and evidence remain consistent.
-- Calculate ages, generations and elapsed years together; a family relationship must be possible on the same timeline as school, work and historical events.
-- Check recurring objects for incompatible locations, holders or uses across the actual scene sequence. Distinguish a contradiction from an ordinary action omitted between scenes. Require added explanation when the omission breaks a decisive cause, character choice or payoff, rather than for every routine movement or technical operation.
-- Mobile paragraphs remain readable without turning prose into fragments.
-- Title and synopsis promise only events the manuscript actually delivers.
+## 整稿审阅
 
-## Packaging
+- 没有场景只用来解释；后段不塌缩成摘要；场景过渡保持因果。
+- 名称、物件、称呼、地点、时间线前后一致。
+- 反复出现的物件、信件、数字，其位置、持有者、用途在真实场景序列里不冲突。区分「真矛盾」与「场景之间省略的常规动作」：只有当省略破坏决定性因果或人物选择时才补写。
+- 情绪有可观察的动作或物件支撑，不是靠形容词宣布。
+- 不同人物的声口能分辨；叙述声音全篇稳定。
+- 生活质地（靠什么过日子、什么规矩在管着他）是否具体到能解释人物的选择。
+- 标题只承诺正文实际交付的内容。
 
-- For amounts, quantities, timing and responsibility, use the manuscript's final evidence-backed conclusion. Earlier estimates and a character's suspicions are not established outcomes. If a precise number cannot be verified, describe the conflict and payoff without inventing or inflating it.
-- Ground sales claims in scenes actually present. Do not market an unresolved review finding as a proven strength or promise unverified quality. Describe the story's concrete conflict and payoff.
+## 修订
 
-## Revision
+- 从用户的修订请求出发，保留未要求改动的标题、人物决定、结尾与场景功能。
+- 先确定受影响的场景与一份共享修正方案，再动手；跨场景保持称呼、数字、日期、物件归属一致。
+- 保留建立决定性证据与关键交接的场景；用最小充分修改补上真正的因果缺口，并把改动贯穿相邻过渡。
+- 按作品自己的意图审整稿，单独复核最新要求的修复；每条发现标为「问题 / 已解决的旧问题 / 中性观察」并给具体证据。
 
-- Start from the author's revision request. Preserve the title, conflict, ending and scene functions that the author has not asked to change.
-- Identify affected chapters and a shared correction plan before revising. Keep ages, generations, dates and object transfers consistent across them.
-- Preserve the scenes that establish decisive evidence and meaningful handoffs. Repair the actual causal gap with the smallest sufficient change and carry it through adjacent transitions.
-- Judge the whole manuscript against its creative intent; separately verify the latest requested repairs. Label each finding as an issue, a resolved prior issue, or a neutral observation and give concrete evidence.
+## 提交前
 
-## Before submitting chapters
-
-- Match each submitted chapter to its own plan: opening state, scene function, newly discovered information, and final beat. The full outline supplies future context; later investigations, confrontations and revelations must stay in their assigned chapters. Do not replay an already completed investigation in the next chapter.
-- Fit the requested chapter length by choosing the planned scene's essential actions and exchanges. Complete that scene before stopping; a complete chapter does not need to enact the whole story. Remove repeated reasoning or future chapter events before shortening the scene into a synopsis.
-- Read the final paragraph of every submitted chapter. Complete its utterance, action and scene transition; do not submit text that breaks off inside a sentence or dialogue. A continuation hook must be a complete beat.
-- After any output interruption, reconstruct the complete affected chapter from the plan and surrounding chapters; do not carry a truncated excerpt forward as a finished chapter.
-
-- For a scoped revision, first extract binding facts from the unchanged chapters into the revision brief: participant identities, relationships, who owns each decisive document, event order and later consequences. Check the replacement against these facts before submission; do not introduce a new participant role that contradicts a later unchanged scene.
+- 每个提交单元与自己的计划对齐：进入状态、场景功能、新获知的信息、最终落点。后文的调查、对峙、揭示与结论留在各自场景里，不重演已完成的内容。
+- 按场景的必要动作与交换来适配长度；先完整收束该场景再停笔，一篇完整作品不必在一个场景里演完全部。
+- 读每个单元的末段：完成句子、动作与过渡，不提交断在句中或对白中的文本。
+- 输出中断后，从计划与相邻场景重建完整的受影响场景，不把截断片段当成品继续传。
+- 定向修订时，先从不变场景提取约束性事实：人物身份、关系、关键物件归属、事件顺序与后续后果；核对替换稿后再提交，不引入与后文未改场景冲突的新人物或新结论。

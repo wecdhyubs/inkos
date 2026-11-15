@@ -1,25 +1,40 @@
-# Reader contract and progression
+# 作品自身的推进
 
-## Opening chapters
+文件名沿用旧版，内容已重写：原来的「读者契约 / 追读 / 钩子 / 兑现节拍」不再是默认标准。这里说的承诺，是**作品向自己许下的那个问题**，不是向平台许下的爽点。
 
-Establish the active story pressure before background explanation takes over. The first mobile screen needs a concrete disturbance, contradiction, risk, or unanswered fact that makes the next sentence necessary. Introduce only the people and rules required for that pressure.
+## 开篇
 
-In chapter two, demonstrate the protagonist's unusual leverage, information, constraint, or capability through a visible use and consequence rather than explanation. By chapter three, make the next short-term objective legible through action. These are craft defaults for commercial serial openings, not authority over a user's chosen literary pace or form.
+- 给一个具体的人、一段已经在进行的生活、一处不对劲的地方。不写推介式导语，不套「首屏扰动 / 三章展示筹码 / 短期目标」的商业连载公式。
+- 背景随动作带出，只交代这一场需要的人、物与规则。读者可以慢一点明白，但不该被蒙在鼓里。
+- 开篇提出的那个问题或那种处境，后面要被认真对待：可以回答、可以加深、也可以改变提问方式，但不能被忘掉。
 
-## Keep promises visible
+## 推进靠变化，不靠提及
 
-The opening establishes what kind of pleasure, tension, or question the story will repeatedly deliver. Later chapters may vary pace, but they must keep feeding that contract through concrete events. A hook is not maintained by mentioning it; someone must act on evidence, pay a cost, make a choice, or change their understanding.
+一个有用的单元至少改变一条主轴 + 一条副轴：
 
-## Progress on more than one axis
+- 处境、所知、关系、身份、资源、自我理解；
+- 读者对人物的理解、对那件事的判断、对世界规则的认识。
 
-A useful chapter changes at least one primary axis and one supporting axis: plot position, knowledge, relationship, status, danger, resources, or self-understanding. Quiet chapters still need a durable change. Climaxes need aftermath before the next escalation.
+反复提到某条线不算推进。安静章节也要有耐久的变化；核心事件之后先写余波（影响、代价、生活怎么被改动），再进入下一轮。
 
-Plan serial movement in short dramatic cycles rather than isolated chapters. A chapter memo should name the immediate action, active reader expectation, payoff or deliberate delay, function of quieter beats, character-choice causality, end-state change, and explicit hook movement. Use only hook ids present in the supplied ledger.
+## 单元计划说人话
 
-When the user specifies proportions between story lines, realize each active line through scenes, dialogue, action, evidence, or relationship change. Do not satisfy a requested proportion by repeating the percentage in planning prose. In a shared event with several important characters, preserve distinct motives and interpretations without multiplying viewpoints beyond the chosen narrative form.
+按短周期规划，不把每个单元写成全篇摘要，更不要写成字段填空表。
 
-## Preserve causal ownership
+**一条单元计划 = 一到三句具体事件**：谁在哪、想干什么、撞上什么、做了什么、结果多了 / 少了 / 知道了 / 失去了什么、下一单元为什么非写不可。写完之后再拿「即时任务、此刻谁还不知道什么、本单元交付或有意延后、安静拍承担什么、人物选择的因果、终态变化、台账变动」回头核对——**核对项不是要填的格子**。ID 与字数预算放附注。
 
-Consequences come from character choices under constraints. Do not solve pressure through coincidence, unexplained competence, or an antagonist becoming careless. When a new fact changes the route, show how it was discovered and why it matters now.
+例：「科波菲尔去货行贴标签，管事把他安排在靠窗的位置，他发现窗外能看见继父的马车经过。他没跟人说，从此每天数那辆车。这章结束他多了一个不敢讲出来的念头；下一章写他母亲来信。」而不是「本章功能：推进主线并深化人物关系；终态：认知升级」。详见 `references/outline-voice.md`。
 
-Separate the date an event occurred from the date the protagonist discovers it. If canon places a stocktake, death, transfer or report in the past, stage the discovery of its evidence without moving the event into the present. Before a character opens, moves or alters an important object, preserve its established holder, access rules and visible handoff.
+## 因果归属与两个时间
+
+后果来自人物在约束下的选择。不靠巧合救场、突然出现的本事、对手突然失误，也不靠一句误会拖三章。新事实改变路线时，交代它怎么被知道、为什么此刻重要。
+
+**事件发生时间**与**人物 / 读者获知时间**分开：过去的事不因为今天被提起就发生在今天。重要物件在被打开、移动或改动前，保持已确立的持有者、存放位置与可见交接。数字、日期、路程同理，先统一口径，再检查原因仍先于结果。
+
+## 巧合的分寸
+
+经典成长小说允许巧合（重逢、遗失的信、恰巧听见的一句话），但必须有铺垫、被当事人承担后果，并且改变的是处境与关系，而不是替作者把困境抹平。没有代价的巧合就是机械降神。
+
+## 章末与收束
+
+章末停在一个完整的一拍：一句话、一个动作、一个判断都要收完。可以用新问题或新的不对劲引出下一章，但不用悬念公式，不为了让人连夜追更断在半句里。全书收束时，回应开篇那个问题，交代代价与余味，不用一段总结点题。

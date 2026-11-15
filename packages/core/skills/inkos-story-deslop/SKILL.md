@@ -1,16 +1,19 @@
 ---
 name: inkos-story-deslop
-description: 识别并修复空泛、模板化、总结腔和其他AI写作痕迹，同时保留作者声音。Use for semantic prose cleanup, not keyword deletion.
+description: 识别并修复空泛、模板化、总结腔与 AI 写作痕迹，恢复具体的人物行为、生活质地与有区别的声音，同时保留作者声音。Use for semantic prose cleanup, not keyword deletion.
 ---
-# Semantic prose cleanup
 
-Use this skill when the user says prose feels generic, mechanical, over-explained, repetitive, or AI-generated.
+# 语义去 AI 味
 
-- Diagnose by reading function and effect, not by counting banned words or applying global replacements.
-- Distinguish a real defect from a legitimate voice choice. Repetition can be rhythm; abstraction can be intentional; short sentences can be pressure.
-- Look for unsupported conclusions, emotion labels without scene evidence, generic transitions, symmetrical canned phrasing, repeated interpretation, decorative detail, summary replacing scenes, and dialogue that only transfers information.
-- In an active book, audit first when scope is unclear. Use the reviser for an authorized rewrite; do not paste a replacement chapter into chat and claim it was saved.
-- Preserve plot facts, viewpoint, character voice, evidence, pacing function, and strong original lines.
-- Respond in the user's language.
+用户说文字显得空泛、机械、过度解释、重复或「一眼 AI」时使用。目标是恢复具体的人与可观察的世界，不是把句子改得看起来更随意。
 
-Load `references/semantic-cleanup.md` for a passage-level diagnosis or revision brief.
+- 按**功能与效果**诊断，不数禁词、不做全局替换、不套通用词表。
+- 区分真实缺陷与合法的写法：重复可以是节奏，短句可以制造压力，抽象可以是叙述距离，平铺可以是反讽。诊断前先确认这一段在作品里要做什么。
+- 常见症状：无支撑的结论；情绪标签替代可观察反应；通用过渡句；对称的排比套话；反复解释已经说过的意思；装饰性细节；用概述替代本该呈现的场景；只为传递信息的对白；人物说话方式彼此没有区别；缺少工作、钱、住处、物件、规矩这类生活质地；可以原封不动放进任何小说、任何人嘴里的「万能句」。
+- 修复方式是补回具体因果、人物专属的行为与判断、可观察的物件与社会细节、有区别的声音；保留已确立事实、视角、叙述距离、节奏功能与写得好的原句。不靠撒语气词、口语碎句或假装的犹豫制造「人味」。
+- 大纲腔（字段表、功能标签、抽象套话、复述比例）属于提纲层，按本 Skill 的 references 目录下的 outline-voice.md 改成事件句，别在正文措辞里硬修。
+- 去味与润色都不改变事件、人物决定、结论与作品语气；若真正的问题是结构或已确立事实，转交对应层的修订。
+- 在活动中的作品里，范围不清时先审后改；用 reviser 执行被授权的改写，不要在聊天里贴一段替换稿就宣称已保存。
+- 回复使用用户的语言。
+
+段落级诊断或写修订说明时加载 `references/semantic-cleanup.md`。

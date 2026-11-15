@@ -1,25 +1,46 @@
-# Long-form foundation design
+# 作品基础设计
 
-## Narrative engine
+创建或重建基础文档（story frame / 卷篇地图 / 人物档案 / 世界与规则）时使用。目标不是设计「卖点」，是让一个世界和里面的人足以撑住一部长篇。
 
-Define a concrete thematic pressure, a central conflict produced by incompatible motives, and a visible foreground story causally driven by a deeper background story. Give opponents coherent interests rather than making them delivery devices for the protagonist.
+## 引擎
 
-Ground the world in a few unbreakable rules and a sensory texture that can enter scenes. The end direction should be observable: a final position, relationship, truth, cost, or action that later planning can work toward.
+- 起点是一个具体的人，在具体的处境里，被一个躲不掉的问题缠住；不是一句类型设定。
+- 主题压力从人物互相冲突的欲望里长出来，不先写成口号再往里塞情节。
+- 可见主线（眼下要处理的事）连到深层因果线（为什么这些事会落到他头上、谁在很久以前做了什么）。
+- 终点要可观察：一种关系、一个位置、一次承认、一笔代价、一种不再可能回去的生活。不是等级、数值或「成为最强」。
+- 对手方有自己的利益、理由与要守住的东西；不做成给主角递挫折的道具。
 
-## Volumes and promises
+## 世界与生活质地
 
-Plan at volume scale. Each volume has a distinct dramatic purpose, emotional movement, observable end state, supporting results, and an irreversible change. Connect short-range arc promises to the full-book line, and give load-bearing mysteries or promises a plausible payoff region without scripting every chapter in advance.
+- 写清人物靠什么过日子：工作、钱、住处、路程、天气、饮食、规矩、街坊、机构。这些决定他能做什么、不敢做什么。
+- 定几条不可违背的硬约束（时代、身体、阶级、法律、家庭、距离），后面的情节不许偷偷绕过。
+- 称呼、地名、术语、时间线（发生 / 获知）一次定死，全书一致。
+- 可观察的感官质地留几条就够，用来进场景，不堆设定集。
 
-Translate user-requested proportions between story lines into visible distribution across volumes and short dramatic cycles. Do not satisfy a proportion by restating a percentage.
+## 人物
 
-## Characters
+- 每个重要人物写清：想要什么、怕什么、受什么限制、从哪来、怎么说话、有哪件与主线无关但在意的事。
+- 主要人物之间在欲望、语气、处事方式上彼此不同；同一件事在他们眼里不是同一件事。
+- 成长线写清起点、可能去的地方、以及**要付出什么代价**。允许停滞、退步、做错、不划算。
+- 配角各有独立动机与去留理由，不靠「需要有人告诉主角」而存在。
 
-Build characters from motive, constraint, history, relationship, contradiction, and cost. The protagonist arc needs a concrete starting condition, an internal and external destination, and an irreversible price. Supporting characters need independent reasons to cooperate, resist, misread, or leave.
+## 卷 / 篇与不可逆变化
 
-## Initial hooks
+- 每一部分有独立目的、情绪或认知上的运动、可观察的终态，以及一处回不去的变化。
+- 短程的问题接到全书那条线上；承重的问题留可信的回应区域，但不预先写死每一章。
+- 用户指定各线比重时，用可见的场景与篇幅分配实现，不在规划文字里复述比例。
+- 只埋作品扛得住的事实与问题；区分休眠的伏笔与已经在正文起作用的事。
 
-Seed only facts and promises the story can carry. Distinguish dormant future seeds from hooks already active in prose. Dependencies and expected payoff regions should preserve causal order; only a small number of load-bearing hooks should govern the whole book.
+## 大纲说人话
 
-## Derivative works
+基础文档、卷 / 章计划与单元 memo 是给执笔的人看的施工说明：先写具体事件（谁在哪、想干什么、撞上什么、做了什么、结果变成什么），再回头核对目的、阻力、转折、后果是否都在句子里。不写「功能 / 作用 / 深化 / 强化」这类字段，不自评，不复述百分比，不把待写的事写成已查明。台账 ID 与字数预算退到附注，标题能当一句人话读。详见 `references/outline-voice.md`。
 
-Treat supplied canon as authority. Canon-faithful work fills genuine gaps without changing established facts. AU work names a divergence and propagates its consequences consistently. Intentional OOC needs a visible cause while preserving recognizable voice. Pairing-led work advances the relationship through events rather than placing both characters in the same scene without change. In every mode, create new narrative space instead of replaying the source plot.
+## 验收清单
+
+- 大纲念给没看过材料的人听，他能复述出「谁干了什么」吗？
+- 这个人能不能撑住请求的篇幅，而不是靠一个机制反复供给事件？
+- 开篇是否落在一个具体的人与具体的处境里？
+- 生活质地是否具体到足以决定人物的选择？
+- 主要人物在欲望与声音上是否真的不同？
+- 提纲能否推进而不重复同一拍？
+- 每一部分是否有可观察的终态与不可逆变化？

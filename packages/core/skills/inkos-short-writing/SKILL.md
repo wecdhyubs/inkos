@@ -1,27 +1,25 @@
 ---
 name: inkos-short-writing
-description: 商业短篇的构思、一次写完、整篇审改与包装。Use for confirmed standalone short-fiction production.
+description: 完整的单篇中短篇小说写作：构思、一次成稿、整篇审改。以人物、细节、语言与余味为准，不以卖点、封面、平台包装或商业章节数为目标。Use for confirmed standalone short-fiction production.
 ---
-# Short-fiction writing
 
-Use this skill when the user wants a complete standalone commercial short story, not a long serial or a discussion-only answer.
+# 单篇小说成稿
 
-- Preserve the user's premise, emotional target, taboo, viewpoint, and ending preference. Ask only for a missing choice that would materially change the story.
-- User-specified chapter count and length are authoritative. When the user leaves them open, 12–18 focused chapters is a useful commercial default, not a production requirement or refusal boundary.
-- Apply the writing method to the operation authorized by the user and host.
-- Build one main line and at most one supporting reversal line. Prefer complete scenes over a synopsis montage at any requested scale.
-- Express personality and values through action. Every scene must move conflict, causality, evidence, emotion, payoff, or relationship.
-- Set up reversals and rewards through visible evidence; do not use sudden stupidity or unexplained luck.
-- Make decisive evidence causally credible through established access, motivation and actions. Dramatize its acquisition when a conflict or reversal depends on it; routine handling can use concise transitions. A delayed revelation may explain earlier possession without contradicting the established facts.
-- A discovery changes what the character knows. Later chapters must carry that knowledge forward instead of presenting the same identification as a new discovery. Likewise, a payment or other payoff already delivered must not arrive for the first time again later.
-- When a chapter is below its requested length, expand the missing confrontation, resistance, decision, evidence acquisition or emotional consequence into a complete scene. Do not meet length by repeating conclusions or reciting administrative steps.
-- Treat title, chapter titles, opening, full manuscript, synopsis, selling points, and cover direction as one coherent product.
-- Make the opening a concrete first-screen disturbance rather than an abstract pitch. Chapter titles promise the active pressure or turn; later chapters must not collapse into result summaries.
-- Keep mobile prose dense but breathable. Stage major reversals, confrontations, reveals, and payoffs beat by beat through action, dialogue, evidence, and sensory detail.
-- During revision, preserve the causal events and ending transition unless the user explicitly requests changes to them. Shorten by merging repeated reaction, explanation, and transition; lengthen with missing dramatic action rather than padding.
-- Packaging must describe the manuscript that actually exists. A cover direction serves a mobile portrait book cover with a readable title zone, strong emotion, recognizable story props, and the story's real conflict.
-- For a commercial mobile short-fiction cover, use a 3:4 portrait composition, a large two-to-four-line title zone, a close or half-body character with a charged expression, and only a few immediately recognizable conflict props. Favor high-contrast thumbnail readability over cinematic, corporate, magazine, or landscape-video aesthetics. When image-model lettering is unreliable, reserve a clean deterministic typography zone instead of asking for long generated text.
-- Report partial failures honestly; a cover failure must not erase a successful manuscript.
-- Respond in the user's language.
+用户要一篇完整、可独立交付的中短篇小说时使用。不是连载里的一段，也不是只做讨论的回答。
 
-Load `references/production-checklist.md` before a full production run or whole-story revision.
+- **不做商业包装**。不生成销售卖点、封面方向、竖版构图、平台文案或「章节数默认值」；除非用户单独明确要求，这些都不属于本方法的产物。用户指定的字数、章节数与结尾偏好才是权威。
+- 保留用户的前提、情感与认知目标、禁忌、人称与叙述距离。只问那些会实质改变成稿的缺失选择，不要连问一串。
+- 先定作品自己要弄清楚的那件事，再定结构。一条主线，至多一条辅助对照线；任何尺度下都优先完整场景，而不是提纲式蒙太奇。
+- 人物有独立的欲望、局限与说话方式；个性与价值通过动作、选择与后果呈现，不靠叙述者下结论。配角不是递信息的道具。
+- 每个场景必须改变处境、所知、关系、判断或读者对人物的理解。没有变化的段落删掉，而不是拉长到字数。
+- 反转与结论靠可见证据垫好，不用突然降智、无解释的好运或一句误会撑到底。决定性证据要有可信的可及性、动机与获取过程；当冲突依赖它时，把获取过程展开成完整场景。
+- 一次发现会改变人物的认知，后文必须携带这份认知，不把同一识别当成新发现重演；已经交付的后果不再次首次到达。
+- 开篇给一个具体的人、场景、物件或未答事实，不写推介式导语，也不写「本章将讲述……」。小标题只在真的帮得上阅读时使用。
+- 结尾兑现作品自己提出的那个问题，并留下代价、余味或认知的改变；不强行圆满，不强行反转，不用一段总结点题。
+- 篇幅不足时补齐缺失的对抗、阻力、决策、证据获取、后果或生活质地；靠复述结论、罗列流程、堆形容词凑字数是缺陷。缩短靠合并重复反应与解释，不删决定性场景。
+- 标题、开篇、正文是一个整体，彼此承诺的内容必须一致。**大纲说人话**：提纲每条用具体事件句写，不写「本章功能 / 推进主线 / 埋下伏笔」这类字段与自评，台账与字数退到附注；完整规范见本 Skill 的 references 目录下的 outline-voice.md，按需检索。
+- 修订时保留因果事件与结尾过渡，除非用户明确要求改；先列受影响的场景与共享修正方案，再动手。输出中断后从计划与相邻场景重建完整单元，不把截断片段当成品。
+- 部分失败如实报告；一个可选产物失败，不抹掉已成功落盘的正文。
+- 回复使用用户的语言。
+
+整篇生产或整稿修订前加载 `references/production-checklist.md`。

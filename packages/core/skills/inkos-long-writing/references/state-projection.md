@@ -1,22 +1,42 @@
-# Chapter fact and state projection
+# 连续性与事实台账
 
-## Observe explicit change
+观察已完成章节、结算运行时事实文件时使用。宿主的状态结构（章、钩子、角色）没改，这份方法只约束**什么算已确立的事实**。
 
-Extract only what the chapter establishes. Track character action and physical state, location, resources, relationship movement, emotion, information boundaries, plot promises, time progression, and who is present. Prefer a precise fact over an abstract summary. An implication may remain an unresolved narrative promise, but it is not a completed event.
+## 只记显式变化
 
-## Project incrementally
+只记录正文已经确立的内容：人物行动与身体状态、所在地点、手里的物件、关系变化、谁知道了什么、时间推进、在场者、说过的话与写下的字。偏好精确事实而非抽象总结。
 
-Update the supplied runtime state instead of rebuilding it from scratch. Preserve unrelated facts and stable IDs. Character knowledge is scoped to what each person witnessed or learned. If the chapter stops at a threshold, the state must not move the character beyond it. Outline material is planning context, not evidence that an event happened.
+- 暗示可以留作未决的问题，但不是已发生的事件。
+- 大纲、计划、人物打算做的事是规划上下文，不证明事情发生过。
+- 引述、传闻、信件里的内容要标成「谁说的」，不能直接升格为事实。
 
-## Hook identity and lifecycle
+## 三色分离
 
-- Reuse an existing hook ID whenever the new wording continues the same unresolved promise, even if names, numbers, evidence form, or phrasing change.
-- A mention repeats or recalls a hook without changing facts, risk, scope, relationships, or understanding. It does not advance `lastAdvancedChapter`.
-- An advance adds evidence, changes risk or scope, alters a relationship, or changes what a reader or character can conclude.
-- Resolve only when the chapter answers or invalidates the promise. Defer only when the story explicitly moves it into the background.
-- When current author-approved foundation or a scoped revision explicitly withdraws a promise's premise, update that existing hook to `superseded`, citing the withdrawal authority in notes. Preserve its ID, original premise and historical progression. This is withdrawn planning, not an in-story payoff or postponement. Never infer withdrawal merely because a hook is absent from this chapter; never withdraw resolved history. Superseded entries remain archival records and must not be treated as active promises or required future events.
-- Create a candidate only when no existing hook represents the new unresolved promise. Use `immediate`, `near-term`, `mid-arc`, `slow-burn`, or `endgame` for payoff timing.
+| 颜色 | 含义 | 能否写入已确立状态 |
+| --- | --- | --- |
+| 事实 | 正文已确立、可指回原文 | 可以 |
+| 推断 | 人物或作者的判断，附理由 | 单列，标注为判断 |
+| 计划 | 尚未发生的安排、待验证的猜测 | 不能，只进台账 |
 
-## Numeric and cast state
+「大概」「好像」「据他说」这类限定必须随事实一起保留，结算时不得抹平。
 
-When a resource system exists, every explicit delta must reconcile opening value plus change to closing value. When full-cast tracking is enabled, record present characters, mentioned absent characters, relationship changes, and information boundaries.
+## 增量更新
+
+在给定状态上做增量更新，不推倒重建；保留无关事实与稳定 ID。人物的「已知信息」以其亲眼所见或确实获知为界。章节停在门槛处，状态就不能把人推过门槛。前提变更时，以用户最新明确指令为权威，一致地应用到基础文档、提纲与正文，并报告文档间的残留矛盾。
+
+## 未决事项 ID 与生命周期
+
+- 措辞、称呼、证据形态变了，只要还是同一个未解决的问题，就沿用原 ID。
+- **提及**：重新说到，但事实、处境、关系或理解都没变 → 不算推进。
+- **推进**：多了证据、改变了风险或范围、改变了关系，或改变了人物能得出的结论。
+- **解决**：问题被回答、猜测被证实或否定。
+- **废止**：用户批准的基础文档或定向修订明确撤回前提时，更新原条目、注明依据、保留原 ID 与历史。绝不因为本章没提到就推断废止；废止条目是档案，不再是待办。
+- 只有全新的问题才建候选项；别把休眠的伏笔提拔成活跃承诺。
+
+## 数字、物件与时间线
+
+存在明确数量（钱、年龄、路程、日期）时，每个显式增量都要满足「期初 + 变化 = 期末」。单位、口径、统计时间、称呼、版本全书一致。反复出现的物件（钥匙、信、账本、外套）要追踪持有者、位置与可见交接，区分「真矛盾」与「场景之间省略的常规动作」：只有当省略破坏了决定性因果或人物选择时才补写。
+
+## 与宿主状态的关系
+
+本方法不改 InkOS 的 typed state schema。宿主若仍要求「章 / 钩子 / 角色」字段，把「未决事项」映射到钩子 ID、「因果主体」映射到角色字段即可；不要把计划、推断或未发生的事件塞进已确立事实字段，也不要为了填满字段编造人物动机。

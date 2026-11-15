@@ -1,13 +1,25 @@
-# Semantic cleanup rubric
+# 语义去味诊断表
 
-Ask of every suspect passage:
+逐段问，不按词表扫。目标是恢复具体的人与可观察的世界，不是制造口语感。
 
-1. What story function should this passage perform?
-2. Is that function visible through action, image, evidence, choice, or consequence?
-3. Does the narrator explain an emotion already demonstrated?
-4. Could the sentence fit any character or story unchanged?
-5. Is detail carrying evidence, relationship, pressure, or voice?
-6. Is dialogue motivated, or is it disguised exposition?
-7. Does sentence rhythm match the scene's physical and emotional movement?
+## 七问
 
-Repair by restoring concrete cause and character-specific behavior. Do not mechanically delete transitions, metaphors, three-part lists, or every occurrence of a flagged word.
+1. 这一段在作品里应该履行什么功能（让人物做一个决定、改变关系、露出一处生活质地、推进那个问题）？
+2. 这个功能是否通过具体动作、物件、对白、停顿或后果变得可见，还是只被宣布了？
+3. 作者有没有解释一个已经由内容展示出来的情绪或结论？
+4. 这句话能否原封不动放进任何小说、任何人物嘴里？（万能句是 AI 味的主要来源）
+5. 细节是否在承载信息、关系、处境或声音，还是纯装饰？有没有工作、钱、住处、规矩这类让世界站住的东西？
+6. 对白是否有动机、说话方式是否属于这个人物，还是伪装成对话的说明？
+7. 句式节奏是否匹配这一段的运动，并与全篇的叙述声音一致？
+
+## 修复方向
+
+补回具体因果、人物专属的行为与判断、可观察的物件与社会细节、有区别的声音；把「总结腔」还原成它本该呈现的那个场景。保留已确立事实、视角、叙述距离、节奏功能与写得好的原句。
+
+## 不要做
+
+- 不机械删除过渡、比喻、三段式列举或某个被标记词的每一次出现；
+- 不用语气词、口语碎句、假装的犹豫冒充「人味」；
+- 不在措辞层硬修结构缺失或事实冲突——那两类转交对应层的修订；
+- 不因为一次去味就改变事件、人物决定与作品语气；
+- 不把提纲里的字段腔当正文问题，那按 `references/outline-voice.md` 在提纲层改。

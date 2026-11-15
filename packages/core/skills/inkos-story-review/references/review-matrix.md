@@ -1,32 +1,52 @@
-# Adaptive review matrix
+# 审稿矩阵
 
-Always inspect:
+定性指引，不是评分卡。先判作品自己的契约，再选标准；不按平台、榜单、读者画像或追读效率评价。
 
-- user intent and durable constraints;
-- continuity and causal coherence;
-- character motivation and voice;
-- scene function and consequence;
-- information and evidence consistency;
-- prose clarity and viewpoint stability;
-- promised versus delivered emotion.
+## 恒定检查项（任何文体）
 
-Adjust by form:
+- 作品契约：写什么人、什么世界、想弄清楚什么、写到哪里算完；正文有没有背离它。
+- 人物：重要人物是否有独立欲望、局限与说话方式；配角是否只是递信息的道具；关系是否靠事件改变。
+- 成长与代价：变化是否付出了什么；有没有把「变强 / 升级」误当成弧线。
+- 生活质地：工作、钱、住处、路程、规矩是否具体到能解释人物为什么这么做。
+- 细节：情绪与判断是否由可观察的动作、物件、停顿支撑，而非形容词宣布。
+- 语言：叙述声音是否稳定；不同人物的声口能否分辨；有没有总结腔、成叠限定词、整齐排比。
+- 主题：靠选择与后果显现，还是靠叙述者宣讲或结尾点题。
+- 结构：连续性与因果连贯；每个场景的功能与后果；信息、名称、数字、时间线一致。
+- 大纲 / 提纲是否写成具体事件句，还是字段表、抽象套话与自评。
 
-- Comedy may accept coincidence or exaggeration when setup, rhythm, and character logic support the joke.
-- Romance prioritizes relationship movement, subtext, and emotional credibility.
-- Mystery requires evidence visibility, fair inference, and controlled information release.
-- Commercial serials require continuation pressure without sacrificing scene completeness.
-- Literary work may trade plot velocity for perception, language, or thematic movement, but not for empty repetition.
+## 按作品自身契约调整
 
-For every blocking issue, include evidence, impact, and a repair direction. Separate objective contradiction from taste preference.
+不同写法不共用一个逻辑密度阈值，先看清作品在做什么再下判断。
 
-## Long-form progression
+- 喜剧：铺垫、节奏与人物逻辑成立时，巧合与夸张可以接受。
+- 成长小说 / 狄更斯式长篇：允许慢、允许旁支与群像、允许温和的巧合，但要求生活质地、代价与叙述声音的统一；不要求爽点密度。
+- 推理 / 悬疑：证据可见、推理公平、信息释放诚实。
+- 纯文学：允许用感知、语言或主题运动换情节速度，但不等于允许空转重复。
+- 类型长篇：类型惯例是默认，不是上限；不要拿它否定人物与细节的深度。
+- 报道 / 非虚构（若用户用本方法写）：事实可核、信源分层、断言可追溯。
 
-- Read the chapter memo as the local delivery contract. Judge only populated requirements; a sparse memo is valid for a breather or aftermath chapter.
-- Inspect pacing across recent chapters, not from one chapter in isolation. Look for pressure, escalation, payoff, aftermath, and a durable change before another cycle starts.
-- A subplot or emotional arc advances only when action, knowledge, relationship, status, or interpretation changes. Repeating its name is not movement.
-- Track reader promises through concrete evidence and consequences. Curiosity can deepen, pause, or pay off, but unresolved expectation must not accumulate without visible progress.
-- Treat the supplied hook status as authority. Quote real hook ids and concrete chapter evidence; do not invent urgency from chapter age or silently promote a seed.
-- Compare viewpoint, character knowledge, motive, and voice against the governed context. Distinguish unchanged circumstances from an emotionally flat arc.
+## 长篇推进
 
-Route the repair scope explicitly: `local` for sentence or narrow paragraph work, `structural` for scene, causality, timeline, viewpoint, character logic, or missing payoff, and `unknown` only when the evidence does not support either.
+- 把单元计划当作局部交付契约；只判断其中已填写的要求，稀疏计划对余波或安静章节是有效的。
+- 跨最近若干章看节奏，不孤立评一章：变化、余波、耐久后果，再进入下一周期。
+- 一条支线只有当行动、所知、关系、处境或理解改变时才算前进；重复它的名字不是运动。
+- 开篇提出的那个问题，后面有没有被回答、加深或改变提问方式，而不是被忘掉。
+- 以提供的未决事项状态为权威，引用真实 ID 与原文证据；不因章号变大就凭空造出紧迫感。
+
+## 事实层
+
+- 已确立事实 / 人物推断 / 尚未发生的计划是否混写；限定语是否保留。
+- 数字、单位、称呼、时间线（发生 / 获知）、物件归属与交接是否前后一致。
+- 有无把人物的一面之词写成叙述者确认的事实。
+
+## 输出与修复路由
+
+每个阻断性问题都要写：具体描述 + 原文证据 + 对契约哪一条的影响 + 修复方向 + 建议层级。区分客观矛盾与口味偏好。
+
+- `local`：句子或窄段落的措辞问题；
+- `structural`：场景缺失、因果断裂、时间线、视角、人物逻辑、结构或弧线问题；
+- `factual`：已确立事实、名称、数字、物件归属冲突，需回到权威文档全书同步；
+- `outline`：提纲层的字段表、功能标签、抽象套话与比例复述，按 `references/outline-voice.md` 改成事件句，不动正文；
+- `unknown`：证据不足以判断层级。
+
+格式 / 解析失败单独标为「审稿不可用」，不进入以上任何一层，也不构成对文稿质量的判断。

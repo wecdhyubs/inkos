@@ -54,13 +54,13 @@ describe("external skill loader", () => {
       expect.objectContaining({
         id: "inkos-long-writing",
         source: "builtin",
-        body: expect.stringContaining("objective, resistance"),
+        body: expect.stringContaining("人物先于情节"),
         baseDir: expect.stringMatching(/skills[\\/]inkos-long-writing$/),
       }),
       expect.objectContaining({
         id: "inkos-story-review",
         source: "builtin",
-        body: expect.stringContaining("parser or model-format failure"),
+        body: expect.stringContaining("文学质感检查"),
       }),
       expect.objectContaining({
         id: "inkos-play-world",
