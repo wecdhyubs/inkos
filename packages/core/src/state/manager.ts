@@ -14,6 +14,8 @@ import {
 } from "../harness/work-store.js";
 import { syncWorkSourceArtifacts } from "../harness/source-sync.js";
 import { commitAtomicFileSet } from "../utils/atomic-file-set.js";
+import { existsSync } from "node:fs";
+import { NOVEL_DB_FILENAME, NovelStore } from "./novel-store.js";
 
 const BOOK_LOCK_HEARTBEAT_MS = 30_000;
 const BOOK_LOCK_LEASE_MS = 3 * 60_000;
@@ -428,8 +430,23 @@ export class StateManager {
     return durableChapter + 1;
   }
 
+  /** A Work written by the DB path owns novel.db; legacy Works keep file-only storage. */
+  private novelStoreIfPresent(bookDir: string): NovelStore | null {
+    return existsSync(join(bookDir, NOVEL_DB_FILENAME)) ? NovelStore.open(bookDir) : null;
+  }
+
   async getPersistedChapterCount(bookId: string): Promise<number> {
-    const chaptersDir = join(this.bookDir(bookId), "chapters");
+    const bookDir = this.bookDir(bookId);
+    const store = this.novelStoreIfPresent(bookDir);
+    if (store) {
+      try {
+        const count = store.chapterCount();
+        if (count > 0) return count;
+      } finally {
+        store.close();
+      }
+    }
+    const chaptersDir = join(bookDir, "chapters");
     const chapterNumbers = new Set<number>();
 
     try {
@@ -448,7 +465,17 @@ export class StateManager {
   }
 
   async loadChapterIndex(bookId: string): Promise<ReadonlyArray<ChapterMeta>> {
-    const indexPath = join(this.bookDir(bookId), "chapters", "index.json");
+    const bookDir = this.bookDir(bookId);
+    const store = this.novelStoreIfPresent(bookDir);
+    if (store) {
+      try {
+        const index = store.loadIndex();
+        if (index && index.length > 0) return index.map((entry) => ChapterMetaSchema.parse(entry));
+      } finally {
+        store.close();
+      }
+    }
+    const indexPath = join(bookDir, "chapters", "index.json");
     try {
       const raw = await readFile(indexPath, "utf-8");
       const parsed = JSON.parse(raw) as unknown;
@@ -485,6 +512,14 @@ export class StateManager {
       }
     }
     const validated = index.map((chapter) => ChapterMetaSchema.parse(chapter));
+    const store = this.novelStoreIfPresent(bookDir);
+    if (store) {
+      try {
+        store.saveIndex(validated);
+      } finally {
+        store.close();
+      }
+    }
     await writeFile(
       join(chaptersDir, "index.json"),
       JSON.stringify(validated, null, 2),

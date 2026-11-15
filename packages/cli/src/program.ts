@@ -30,6 +30,7 @@ import { createInteractCommand, type InteractCommandHooks } from "./commands/int
 import { createTuiCommand } from "./commands/tui.js";
 import { launchTui } from "./tui/app.js";
 import { workCommand } from "./commands/work.js";
+import { novelCommand } from "./commands/novel.js";
 
 const require = createRequire(import.meta.url);
 const { version } = require("../package.json") as { version: string };
@@ -67,6 +68,7 @@ export function createProgram(hooks: ProgramHooks = {}): Command {
   program.addCommand(configCommand);
   program.addCommand(bookCommand);
   program.addCommand(workCommand);
+  program.addCommand(novelCommand);
   program.addCommand(chapterCommand);
   program.addCommand(writeCommand);
   program.addCommand(autoCommand);

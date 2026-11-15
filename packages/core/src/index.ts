@@ -597,4 +597,5 @@ export { ingestMaterial, type IngestMaterialInput, type MaterialAsset } from "./
 export { runWorkerAgent, type WorkerAgentOptions } from "./agent/worker-agent.js";
 export { compileStyleGuide } from "./agents/style-guide.js";
 export { LLM_API_FORMATS, isLLMApiFormat, toPiApi, type LLMApiFormat } from "./llm/api-format.js";
+export { NovelStore, NOVEL_DB_FILENAME, NOVEL_STORE_SCHEMA_VERSION, type NovelChapter, type SaveNovelChapterInput } from "./state/novel-store.js";
 export * from "./harness/index.js";

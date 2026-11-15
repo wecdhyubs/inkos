@@ -24,6 +24,7 @@ import { renderMemoAsNarrativeBlock, renderNarrativeSelectedContext } from "../u
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { commitAtomicFileSet, type AtomicFileWrite } from "../utils/atomic-file-set.js";
+import { NovelStore } from "../state/novel-store.js";
 import {
   renderChapterSummariesProjection,
   renderCurrentStateProjection,
@@ -441,6 +442,29 @@ export class WriterAgent extends BaseAgent {
         relativePath: join("chapters", "index.json"),
         content: `${JSON.stringify(chapterIndex, null, 2)}\n`,
       });
+    }
+
+    // The database is the authority. The file writes below are read-only
+    // projections rebuilt after the transaction so legacy readers keep working.
+    const chapterBody = chapterContent.split("\n").slice(2).join("\n");
+    const novelStore = NovelStore.open(bookDir);
+    try {
+      novelStore.saveChapter({
+        number: output.chapterNumber,
+        title: output.title,
+        body: chapterBody,
+        document: chapterContent,
+        filename,
+        ...(chapterIndex ? { chapterIndex } : {}),
+        state: {
+          manifest: runtimeStateSnapshot.manifest,
+          current_state: runtimeStateSnapshot.currentState,
+          hooks: runtimeStateSnapshot.hooks,
+          chapter_summaries: runtimeStateSnapshot.chapterSummaries,
+        },
+      });
+    } finally {
+      novelStore.close();
     }
 
     await commitAtomicFileSet({

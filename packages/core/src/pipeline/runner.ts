@@ -19,6 +19,8 @@ import { StateValidatorAgent, type ValidationResult } from "../agents/state-vali
 import { RadarAgent } from "../agents/radar.js";
 import type { RadarSource } from "../agents/radar-source.js";
 import { StateManager } from "../state/manager.js";
+import { existsSync } from "node:fs";
+import { NOVEL_DB_FILENAME, NovelStore } from "../state/novel-store.js";
 import { archiveChapterVersion, readChapterUserBrief } from "../state/chapter-workspace.js";
 import { dispatchNotification, dispatchWebhookEvent } from "../notify/dispatcher.js";
 import type { WebhookEvent } from "../notify/webhook.js";
@@ -864,7 +866,7 @@ export class PipelineRunner {
       observationCount: result.observations.length,
     });
 
-    await syncWorkSourceArtifacts({ projectRoot: this.config.projectRoot, workId: bookId, accept: true, acceptPaths: ["source/chapters/index.json"] });
+    await syncWorkSourceArtifacts({ projectRoot: this.config.projectRoot, workId: bookId, accept: true, acceptPaths: ["source/chapters/index.json", "source/novel.db"] });
     const spec=buildLengthSpec(book.chapterWordCount,book.language,book);
     const delivery=chapterLengthDelivery(countChapterLength(content,spec.countingMode),spec);
     return { ...result, chapterNumber: targetChapter,...(delivery?{delivery}:{}) };
@@ -2203,6 +2205,15 @@ export class PipelineRunner {
   }
 
   private async readChapterContent(bookDir: string, chapterNumber: number): Promise<string> {
+    if (existsSync(join(bookDir, NOVEL_DB_FILENAME))) {
+      const store = NovelStore.open(bookDir);
+      try {
+        const chapter = store.getChapter(chapterNumber);
+        if (chapter) return chapter.body;
+      } finally {
+        store.close();
+      }
+    }
     const chaptersDir = join(bookDir, "chapters");
     const files = await readdir(chaptersDir);
     const paddedNum = String(chapterNumber).padStart(4, "0");
