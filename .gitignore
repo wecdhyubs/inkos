@@ -35,3 +35,13 @@ storyboards/
 translations/
 inkos.json
 CLAUDE.md
+
+# 凭据与 API Key：Studio 把 service key 写在 .inkos/secrets.json，任何密钥都不入库
+.inkos/secrets.json
+**/secrets.json
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
